@@ -1,5 +1,6 @@
 import "./styles/main.css";
 import logoImg from "./assets/logo-esport.svg";
+import { MagnifyingGlassPlus } from "phosphor-react";
 function App() {
   return (
     <div className="max-w-[1344px] mx-auto flex flex-col items-center ny-20">
@@ -34,8 +35,18 @@ function App() {
         </a>
       </div>
       <div className="pt-1 bg-gradient mt-8 self-stretch rounded-lg overflow-hidden">
-        <div className="bg-[#2A2634] px-8 py-6  ">
-
+        <div className="bg-[#2A2634] px-8 py-6  flex justify-between items-center">
+          <strong className="text-2xl text-white font-black block">
+            
+            Could not find your duo?
+          </strong>
+          <span className="text-zinc-400">
+            Publish up and announce it to find new players!
+          </span>
+          <button className="py-3 px-4 bg-violet-500 hover:bg-violet-600 text-white rounded flex items-center gap-3">
+            <MagnifyingGlassPlus size={24} />
+            Announce
+          </button>
         </div>
       </div>
     </div>
